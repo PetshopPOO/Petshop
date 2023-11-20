@@ -21,6 +21,8 @@ public class Venda {
     
     public Venda(double valor) {
         this.valor = valor;
+        produtos = new ArrayList<Produto>();
+        codigo++;
     }
 
     public int getCodigo() {

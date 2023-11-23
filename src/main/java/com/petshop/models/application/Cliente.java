@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.Entity;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import com.petshop.models.secondary.Endereco;
@@ -20,6 +21,7 @@ import lombok.Setter;
 @NoArgsConstructor
 public class Cliente extends Pessoa{
     private String email;
+    @OneToMany(mappedBy = "tutor")
     private List<Pet> pets;
 
     

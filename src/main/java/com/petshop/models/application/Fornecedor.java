@@ -1,6 +1,8 @@
 package com.petshop.models.application;
 
 import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 import com.petshop.models.secondary.Endereco;
@@ -21,5 +23,8 @@ public class Fornecedor {
     private String nome;
     private String[] telefones;
     private Endereco endereco;
+    @ManyToOne
+    @JoinColumn(name = "estoque")
+    private Estoque estoque;
 
 }

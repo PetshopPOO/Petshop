@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import com.petshop.models.secondary.Endereco;
@@ -23,12 +23,15 @@ import lombok.Setter;
 @NoArgsConstructor
 public class Funcionario extends Pessoa{
 
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
     private Long matricula;
     private String rg;
     private double salario;
+    @ManyToOne
     private Funcionario supervisor;
+    @OneToMany(mappedBy = "funcionario")
     private List<Servico> servicos;
+    @OneToMany(mappedBy = "funcionario")
     private List<Venda> vendas;
 
     public Funcionario(String cpf, String nome, String[] telefones, Endereco endereco, Long matricula, String rg,

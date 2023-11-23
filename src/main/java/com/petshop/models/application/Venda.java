@@ -7,9 +7,12 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
-import com.petshop.interfaces.FormaPagamento;
+import com.petshop.models.secondary.FormaPagamento;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -25,15 +28,19 @@ public class Venda {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long codigo;
     private double valor;
-    private FormaPagamento formaPagamento;
+    @OneToMany(mappedBy = "venda")
+    private List<FormaPagamento> formasPagamentos;
+    @OneToMany
     private List<Produto> produtos;
+    @ManyToOne
+    @JoinColumn(name = "Vendedor")
     private Funcionario funcionario;
     private Cliente cliente;
 
     
-    public Venda(double valor, FormaPagamento formaPagamento, Cliente cliente) {
+    public Venda(double valor, List<FormaPagamento> formasPagamentos, Cliente cliente) {
         this.valor = valor;
-        this.formaPagamento = formaPagamento;
+        this.formasPagamentos = formasPagamentos;
         this.cliente = cliente;
         produtos = new ArrayList<Produto>();
     }

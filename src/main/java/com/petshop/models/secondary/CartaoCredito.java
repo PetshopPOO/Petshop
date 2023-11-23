@@ -4,9 +4,11 @@ import java.time.LocalDate;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
-import com.petshop.interfaces.FormaPagamento;
+import com.petshop.models.application.Venda;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -19,13 +21,16 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class CartaoCredito implements FormaPagamento{
+public class CartaoCredito extends FormaPagamento{
     private String nomeTitular;
     @Id
     private int numero;
     private String codigoSeguranca;
     private String bandeira;
     private LocalDate dtVencimento;
+    @ManyToOne
+    @JoinColumn(name = "Venda")
+    private Venda venda;
 
     
 }

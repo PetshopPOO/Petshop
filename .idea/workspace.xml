@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0c0ac853-7096-4f6d-9934-d70ac966b70e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/PetshopApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/PetshopApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/models/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/models/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/models/Estoque.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/models/Fornecedor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/models/Fornecedor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/models/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/models/Funcionario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/models/Pet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/models/Pet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/models/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/models/Produto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/repositories/ClienteRp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/repositories/ClienteRp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/repositories/EstoqueRp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/repositories/FornecedorRp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/repositories/FornecedorRp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/repositories/PetRp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/repositories/PetRp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/secondary/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/secondary/Pessoa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/PetshopApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/PetshopApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/models/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/models/Cliente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/models/Estoque.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/models/Fornecedor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/models/Fornecedor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/models/Funcionario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/models/Funcionario.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/models/Pet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/models/Pet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/models/Produto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/models/Produto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/models/Servico.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/models/Servico.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/models/Venda.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/models/Venda.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/repositories/ClienteRp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/repositories/ClienteRp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/repositories/EstoqueRp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/repositories/FornecedorRp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/repositories/FornecedorRp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/repositories/FuncionarioRp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/repositories/FuncionarioRp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/repositories/PetRp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/repositories/PetRp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/repositories/ProdutoRp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/repositories/ProdutoRp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/repositories/ServicoRp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/repositories/ServicoRp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/repositories/VendaRp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/repositories/VendaRp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/secondary/CartaoCredito.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/secondary/CartaoCredito.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/secondary/Endereco.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/secondary/Endereco.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/secondary/FormaPagamento.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/secondary/FormaPagamento.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/secondary/Pessoa.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/secondary/Pessoa.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/views/MainFX.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/views/MainFX.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/views/teste.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/petshop/petshop/PetshopApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/petshop/petshop/PetshopApplicationTests.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Record" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2YobHlMAfWk87t0yVz23k313fO2" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH&quot;: &quot;145&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;79&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;luiz&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/wesle/OneDrive/Área de Trabalho/Petshop&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.petshop.petshop.DTO" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.PetshopApplication">
+    <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="2" requestIdentifier="#2" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="3" requestIdentifier="#3" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="4" requestIdentifier="#4" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="5" requestIdentifier="#5" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PetshopApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="petshop" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.petshop.petshop.PetshopApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.generated-requests | #5" />
+        <item itemvalue="HTTP Request.generated-requests | #3" />
+        <item itemvalue="HTTP Request.generated-requests | #4" />
+        <item itemvalue="HTTP Request.generated-requests | #2" />
+        <item itemvalue="HTTP Request.generated-requests | #1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0c0ac853-7096-4f6d-9934-d70ac966b70e" name="Changes" comment="" />
+      <created>1701194793524</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1701194793524</updated>
+      <workItem from="1701194794526" duration="3605000" />
+      <workItem from="1701207587322" duration="293000" />
+      <workItem from="1701208762455" duration="32000" />
+      <workItem from="1701709201924" duration="57000" />
+      <workItem from="1701709298399" duration="8304000" />
+      <workItem from="1701734912600" duration="5272000" />
+      <workItem from="1701785605271" duration="6104000" />
+      <workItem from="1701857105680" duration="17482000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

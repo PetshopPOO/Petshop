@@ -1,13 +1,13 @@
 package com.petshop.petshop.secondary;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Inheritance;
-import jakarta.persistence.InheritanceType;
+import com.petshop.petshop.models.VendaTotal;
+import jakarta.persistence.*;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
+import java.util.List;
 
 @Entity
 @Getter
@@ -17,4 +17,6 @@ import lombok.Setter;
 public abstract class FormaPagamento {
     @Id
     private String tipo;
+    @ManyToMany
+    private List<VendaTotal> vendas;
 }

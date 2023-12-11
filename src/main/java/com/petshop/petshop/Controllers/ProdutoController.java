@@ -44,8 +44,9 @@ public class ProdutoController {
 
     @PostMapping("compra")
     public void compraProduto(@RequestBody CompraProdutoDTO data){
-        Optional<Produto> produto = produtoRp.findById(data.codigo());
-        produto.get().setEstoque(produto.get().getEstoque()+data.quantidade());
-        System.out.println(produto.get().getEstoque());
+        Optional<Produto> produtoOp = produtoRp.findById(data.codigo());
+        Produto produto = new Produto(produtoOp.get().getCodigo(), produtoOp.get().getNome(),produtoOp.get().getPreco(), produtoOp.get().getEstoque(),produtoOp.get().getFornecedor());
+        produto.setEstoque(produto.getEstoque() + data.quantidade());
+        produtoRp.save(produto);
     }
 }

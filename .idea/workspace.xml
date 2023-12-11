@@ -5,45 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c0ac853-7096-4f6d-9934-d70ac966b70e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/PetshopApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/PetshopApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/Controllers/FuncionarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/Controllers/FuncionarioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/Controllers/ProdutoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/Controllers/ProdutoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/models/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/models/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/models/Estoque.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/models/Fornecedor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/models/Fornecedor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/models/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/models/Funcionario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/models/Pet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/models/Pet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/models/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/models/Produto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/repositories/ClienteRp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/repositories/ClienteRp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/repositories/EstoqueRp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/repositories/FornecedorRp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/repositories/FornecedorRp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/repositories/PetRp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/repositories/PetRp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/secondary/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/secondary/Pessoa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/PetshopApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/PetshopApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/models/Venda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/models/Venda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/repositories/VendaRp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/repositories/VendaRp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/secondary/FormaPagamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/secondary/FormaPagamento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/Controllers/FuncionarioController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/Controllers/FuncionarioController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/Controllers/ProdutoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/Controllers/ProdutoController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/models/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/models/Cliente.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/models/Estoque.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/models/Fornecedor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/models/Fornecedor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/models/Funcionario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/models/Funcionario.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/models/Pet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/models/Pet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/models/Produto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/models/Produto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/models/Servico.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/models/Servico.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/models/Venda.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/models/Venda.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/repositories/ClienteRp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/repositories/ClienteRp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/repositories/EstoqueRp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/repositories/FornecedorRp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/repositories/FornecedorRp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/repositories/FuncionarioRp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/repositories/FuncionarioRp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/repositories/PetRp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/repositories/PetRp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/repositories/ProdutoRp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/repositories/ProdutoRp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/repositories/ServicoRp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/repositories/ServicoRp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/repositories/VendaRp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/repositories/VendaRp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/secondary/CartaoCredito.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/secondary/CartaoCredito.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/secondary/Endereco.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/secondary/Endereco.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/secondary/FormaPagamento.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/secondary/FormaPagamento.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/secondary/Pessoa.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/secondary/Pessoa.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/views/MainFX.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/views/MainFX.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/views/teste.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/petshop/petshop/PetshopApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/petshop/petshop/PetshopApplicationTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,13 +34,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Record" />
         <option value="Class" />
+        <option value="Record" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/petshop/petshop/models/VendaTotal.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -83,10 +65,11 @@
     &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH&quot;: &quot;145&quot;,
     &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;79&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;luiz&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;wesley&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/wesle/OneDrive/Área de Trabalho/Petshop&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -162,7 +145,12 @@
       <workItem from="1701709298399" duration="8304000" />
       <workItem from="1701734912600" duration="5272000" />
       <workItem from="1701785605271" duration="6104000" />
-      <workItem from="1701857105680" duration="17482000" />
+      <workItem from="1701857105680" duration="18084000" />
+      <workItem from="1701961920160" duration="2811000" />
+      <workItem from="1702129898860" duration="12844000" />
+      <workItem from="1702219712357" duration="1850000" />
+      <workItem from="1702223923744" duration="290000" />
+      <workItem from="1702293879633" duration="1299000" />
     </task>
     <servers />
   </component>

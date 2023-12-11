@@ -27,6 +27,8 @@ public class Cliente extends Pessoa{
     @OneToMany(mappedBy = "tutor", fetch = FetchType.EAGER)
     @JsonManagedReference
     private List<Pet> pets;
+    @OneToMany(mappedBy = "cliente")
+    private List<VendaTotal> compras;
 
     
     public Cliente(String cpf, String nome, String[] telefones, Endereco endereco,String email) {

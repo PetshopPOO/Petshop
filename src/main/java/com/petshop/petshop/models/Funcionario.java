@@ -27,7 +27,7 @@ public class Funcionario extends Pessoa{
     @OneToMany(mappedBy = "funcionario")
     private List<Servico> servicos;
     @OneToMany(mappedBy = "funcionario")
-    private List<Venda> vendas;
+    private List<VendaTotal> vendas;
 
     public Funcionario(String cpf, String nome, String[] telefones, Endereco endereco, Long matricula, String rg,
             double salario) {
@@ -36,7 +36,7 @@ public class Funcionario extends Pessoa{
         this.rg = rg;
         this.salario = salario;
         servicos = new ArrayList<Servico>();
-        vendas = new ArrayList<Venda>();
+        vendas = new ArrayList<VendaTotal>();
     }
 
     public Funcionario (FuncionarioRequestDTO data){

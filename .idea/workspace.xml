@@ -4,24 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c0ac853-7096-4f6d-9934-d70ac966b70e" name="Changes" comment="">
+    <list default="true" id="0c0ac853-7096-4f6d-9934-d70ac966b70e" name="Changes" comment="Todas as rotas mais importantes escritas e testadas">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/Controllers/VendaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/Controllers/VendaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/models/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/models/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/models/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/models/Funcionario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/models/Pet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/models/Pet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/models/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/models/Produto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/models/Servico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/models/Servico.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/models/Venda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/models/Venda.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/models/VendaTotal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/models/VendaTotal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/secondary/FormaPagamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/secondary/FormaPagamento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/Controllers/VendaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/Controllers/VendaController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/models/Funcionario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/models/Funcionario.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/models/Pet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/models/Pet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/models/Produto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/models/Produto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/models/Servico.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/models/Servico.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/models/Venda.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/models/Venda.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/models/VendaTotal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/models/VendaTotal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/Controllers/ServicoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/Controllers/ServicoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/Controllers/ServicoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/Controllers/ServicoController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,11 +138,15 @@
       <workItem from="1702223923744" duration="290000" />
       <workItem from="1702293879633" duration="6236000" />
       <workItem from="1702397774096" duration="2852000" />
-      <workItem from="1702476584443" duration="1786000" />
+      <workItem from="1702476584443" duration="2774000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Todas as rotas mais importantes escritas e testadas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Todas as rotas mais importantes escritas e testadas" />
   </component>
 </project>

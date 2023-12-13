@@ -1,5 +1,6 @@
 package com.petshop.petshop.Controllers;
 
+import com.petshop.petshop.DTO.ServicoByIdDTO;
 import com.petshop.petshop.DTO.ServicoRealizaDTO;
 import com.petshop.petshop.DTO.ServicoRealizadoIdDTO;
 import com.petshop.petshop.DTO.ServicoRequestDTO;
@@ -60,12 +61,13 @@ public class ServicoController {
     }
 
     @GetMapping("servicobyid")
-    public Servico getServicoById(@RequestBody Long id){
-        return servicoRp.findById(id).get();
+    public Servico getServicoById(@RequestBody ServicoByIdDTO data){
+        System.out.println(data.id());
+        return servicoRp.findById(data.id()).get();
     }
     @GetMapping("servicoRealizadoById")
-    public Optional<ServicoRealizado> getServicoRealizadoById(@RequestBody ServicoRealizadoIdDTO data){
+    public ServicoRealizado getServicoRealizadoById(@RequestBody ServicoRealizadoIdDTO data){
         System.out.println(data.id());
-        return servicoRealizadoRp.findById(data.id());
+        return servicoRealizadoRp.findById(data.id()).get();
     }
 }

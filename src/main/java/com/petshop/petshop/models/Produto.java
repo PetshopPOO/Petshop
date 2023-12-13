@@ -7,6 +7,8 @@ import jakarta.persistence.*;
 
 import lombok.*;
 
+import java.util.List;
+
 @Entity
 @Table(name = "Produto")
 @Getter
@@ -25,21 +27,14 @@ public class Produto {
     @ManyToOne
     @JsonBackReference
     private Fornecedor fornecedor;
-    @OneToOne
-    private Venda itemVenda;
+
 
     public Produto (ProdutoRequestDTO data){
         this.nome = data.nome();
         this.preco = data.preco();
     }
 
-    public Produto(Long codigo, String nome, double preco, int estoque, Fornecedor fornecedor) {
-        this.codigo = codigo;
-        this.nome = nome;
-        this.preco = preco;
-        this.estoque = estoque;
-        this.fornecedor = fornecedor;
-    }
+
 }
 
 

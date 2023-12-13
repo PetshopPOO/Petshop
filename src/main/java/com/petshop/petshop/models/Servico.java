@@ -25,9 +25,6 @@ public class Servico {
     private Long codigo;
     private String tipo;
     private double valor;
-    @OneToOne
-    private Pet pet;
-    @ManyToOne
-    private Funcionario funcionario;
+//
     
 }

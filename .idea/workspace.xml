@@ -5,23 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c0ac853-7096-4f6d-9934-d70ac966b70e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/Controllers/FuncionarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/Controllers/FuncionarioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/Controllers/ProdutoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/Controllers/ProdutoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/Controllers/VendaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/Controllers/VendaController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/models/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/models/Cliente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/models/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/models/Funcionario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/models/Pet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/models/Pet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/models/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/models/Produto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/models/Servico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/models/Servico.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/models/Venda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/models/Venda.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/repositories/VendaRp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/repositories/VendaRp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/models/VendaTotal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/models/VendaTotal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/secondary/FormaPagamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/petshop/petshop/secondary/FormaPagamento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/Controllers/FuncionarioController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/Controllers/FuncionarioController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/Controllers/ProdutoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/Controllers/ProdutoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/models/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/models/Cliente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/Controllers/VendaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/Controllers/VendaController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/models/Funcionario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/models/Funcionario.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/models/Pet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/models/Pet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/models/Produto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/models/Produto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/models/Servico.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/models/Servico.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/models/Venda.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/models/Venda.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/secondary/FormaPagamento.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/secondary/FormaPagamento.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/petshop/petshop/models/VendaTotal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/petshop/petshop/models/VendaTotal.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,8 +35,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="Record" />
         <option value="Interface" />
+        <option value="Record" />
       </list>
     </option>
   </component>
@@ -150,7 +150,9 @@
       <workItem from="1702129898860" duration="12844000" />
       <workItem from="1702219712357" duration="1850000" />
       <workItem from="1702223923744" duration="290000" />
-      <workItem from="1702293879633" duration="1299000" />
+      <workItem from="1702293879633" duration="6236000" />
+      <workItem from="1702397774096" duration="2852000" />
+      <workItem from="1702476584443" duration="1786000" />
     </task>
     <servers />
   </component>

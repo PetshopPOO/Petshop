@@ -1,6 +1,7 @@
 package com.petshop.petshop.models;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.petshop.petshop.Controllers.ClienteController;
 import com.petshop.petshop.DTO.ClienteCpfDTO;
 import com.petshop.petshop.DTO.PetRequestDTO;

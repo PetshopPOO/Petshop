@@ -1,5 +1,7 @@
 package com.petshop.petshop.secondary;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.petshop.petshop.models.VendaTotal;
 import jakarta.persistence.*;
 
@@ -18,5 +20,6 @@ public abstract class FormaPagamento {
     @Id
     private String tipo;
     @ManyToMany
+    @JsonBackReference
     private List<VendaTotal> vendas;
 }

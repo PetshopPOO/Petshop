@@ -28,6 +28,7 @@ public class Cliente extends Pessoa{
     @JsonManagedReference
     private List<Pet> pets;
     @OneToMany(mappedBy = "cliente")
+    @JsonManagedReference
     private List<VendaTotal> compras;
 
     

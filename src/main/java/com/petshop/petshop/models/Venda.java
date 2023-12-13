@@ -18,7 +18,7 @@ import lombok.Setter;
 public class Venda {
 
     private double valor;
-    @OneToOne
+    @ManyToOne
     private Produto produto;
     private int quantidade;
     @ManyToOne

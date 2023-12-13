@@ -1,8 +1,11 @@
 package com.petshop.petshop.models;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.petshop.petshop.DTO.FuncionarioRequestDTO;
 import com.petshop.petshop.secondary.Endereco;
 import com.petshop.petshop.secondary.Pessoa;
@@ -18,15 +21,17 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-public class Funcionario extends Pessoa{
+public class Funcionario extends Pessoa implements Serializable {
     private Long matricula;
     private String rg;
     private double salario;
     @ManyToOne
     private Funcionario supervisor;
     @OneToMany(mappedBy = "funcionario")
-    private List<Servico> servicos;
+    @JsonBackReference
+    private List<ServicoRealizado> servicosRealizados;
     @OneToMany(mappedBy = "funcionario")
+    @JsonBackReference
     private List<VendaTotal> vendas;
 
     public Funcionario(String cpf, String nome, String[] telefones, Endereco endereco, Long matricula, String rg,
@@ -35,7 +40,7 @@ public class Funcionario extends Pessoa{
         this.matricula = matricula;
         this.rg = rg;
         this.salario = salario;
-        servicos = new ArrayList<Servico>();
+        servicosRealizados = new ArrayList<ServicoRealizado>();
         vendas = new ArrayList<VendaTotal>();
     }
 

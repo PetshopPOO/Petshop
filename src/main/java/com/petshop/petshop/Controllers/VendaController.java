@@ -35,13 +35,19 @@ public class VendaController {
     @PostMapping("itemVenda")
     public void itemVenda(@RequestBody VendaRequestDTO data){
         if(!vendaTotalRp.existsById(data.codigoVenda().getCodigo())) {
-            vendaTotalRp.save(new VendaTotal(data.codigoVenda().getCodigo()));
+            System.out.println(vendaTotalRp.save(new VendaTotal(data.codigoVenda().getCodigo())));
+
         }
         Optional<VendaTotal> vendaTotalOp = vendaTotalRp.findById(data.codigoVenda().getCodigo());
         VendaTotal vendaTotal = new VendaTotal(vendaTotalOp.get().getCodigo());
         Optional<Produto> produtoOp = produtoRp.findById(data.codigo());
         Produto produto = new Produto(produtoOp.get().getCodigo(), produtoOp.get().getNome(), produtoOp.get().getPreco(), produtoOp.get().getEstoque(), produtoOp.get().getFornecedor());
-        Venda itemVenda = new Venda(data.valor(), produto, data.quantidade(), vendaTotal);
+        Venda itemVenda = new Venda();
+        System.out.println(itemVenda);
+        itemVenda.setValor(data.valor());
+        itemVenda.setQuantidade(data.quantidade());
+        itemVenda.setProduto(produto);
+        itemVenda.setCodigoVenda(data.codigoVenda());
         vendaRp.save(itemVenda);
         }
 
@@ -59,9 +65,11 @@ public class VendaController {
         System.out.println("Aqui");
         Iterable<Venda> totalVendas = vendaRp.findAll();
         ArrayList<Venda> itensVenda = new ArrayList<>();
-        System.out.println("Entrou no if");
         for (Venda venda:totalVendas) {
             if(venda.getCodigoVenda().getCodigo() == vendaTotal.getCodigo()){
+                Optional<Produto> produtoOp = produtoRp.findById(venda.getProduto().getCodigo());
+                Produto produto = produtoOp.get();
+                produto.setEstoque(produto.getEstoque()-venda.getQuantidade());
                 itensVenda.add(venda);
             }
         }

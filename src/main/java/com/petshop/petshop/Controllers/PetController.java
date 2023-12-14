@@ -21,18 +21,21 @@ public class PetController {
     @Autowired
     private ClienteRp clienteRp;
 
+    @CrossOrigin(origins = "*",allowedHeaders = "*")
     @GetMapping
     public List<Pet> getAll(){
         List<Pet> pets = petRp.findAll();
         return pets;
     }
 
+    @CrossOrigin(origins = "*",allowedHeaders = "*")
     @GetMapping("tutor")
     public Iterable<Pet> getAllByTutor(@RequestBody ClienteCpfDTO data){
         ClienteController cc = new ClienteController();
         Cliente cliente = cc.getClienteByCpf(data);
         return cliente.getPets();
     }
+    @CrossOrigin(origins = "*",allowedHeaders = "*")
     @PostMapping
     public void addPet(@RequestBody PetRequestDTO data){
         Pet pet = new Pet(data);
@@ -40,6 +43,7 @@ public class PetController {
         petRp.save(pet);
     }
 
+    @CrossOrigin(origins = "*",allowedHeaders = "*")
     @DeleteMapping("deletaPet")
     public boolean deletaPet(PetIdDTO data){
         if(petRp.existsById(data.id())){

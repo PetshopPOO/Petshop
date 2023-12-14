@@ -14,11 +14,13 @@ public class FuncionarioController {
     @Autowired
     private FuncionarioRp funcionarioRp;
 
+    @CrossOrigin(origins = "*",allowedHeaders = "*")
     @GetMapping
     public Iterable<Funcionario> getAll(){
         return funcionarioRp.findAll();
     }
 
+    @CrossOrigin(origins = "*",allowedHeaders = "*")
     @PostMapping
     public boolean addFuncionario(@RequestBody FuncionarioRequestDTO data) {
         if (!funcionarioRp.existsById(data.cpf())) {
@@ -28,6 +30,7 @@ public class FuncionarioController {
         }
         return false;
     }
+    @CrossOrigin(origins = "*",allowedHeaders = "*")
     @GetMapping("cpf")
     public Funcionario getFuncionarioById(FuncionarioCpfDTO data){
         if(funcionarioRp.existsById(data.cpf())){
@@ -35,6 +38,7 @@ public class FuncionarioController {
         }
         return null;
     }
+    @CrossOrigin(origins = "*",allowedHeaders = "*")
     @DeleteMapping("deletaFuncionario")
     public boolean deletaFuncionario(FuncionarioCpfDTO data){
         if(funcionarioRp.existsById(data.cpf())){

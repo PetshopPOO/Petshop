@@ -33,6 +33,8 @@ public class ServicoController {
     FuncionarioRp funcionarioRp;
     @Autowired
     ServicoRealizadoRp servicoRealizadoRp;
+
+    @CrossOrigin(origins = "*",allowedHeaders = "*")
     @PostMapping("cadastraServico")
     public void cadastraServico (@RequestBody ServicoRequestDTO data) {
         Servico servico = new Servico();
@@ -40,6 +42,7 @@ public class ServicoController {
         servico.setValor(data.valor());
         servicoRp.save(servico);
     }
+    @CrossOrigin(origins = "*",allowedHeaders = "*")
     @PostMapping("realizaServico")
     public void realizaServico(@RequestBody ServicoRealizaDTO data){
         Servico servico = servicoRp.findById(data.servico()).get();
@@ -49,15 +52,18 @@ public class ServicoController {
         servicoRealizadoRp.save(servicoRealizado);
     }
 
+    @CrossOrigin(origins = "*",allowedHeaders = "*")
     @GetMapping("servicos")
     public Iterable<Servico> getAllServicos (){
         return servicoRp.findAll();
     }
 
+    @CrossOrigin(origins = "*",allowedHeaders = "*")
     @GetMapping("servicosRealizados")
     public Iterable<ServicoRealizado> getAllServicosRealizados(){return servicoRealizadoRp.findAll();
     }
 
+    @CrossOrigin(origins = "*",allowedHeaders = "*")
     @GetMapping("servicoById")
     public Servico getServicoById(@RequestBody ServicoByIdDTO data){
         if(servicoRp.existsById(data.id())){
@@ -66,6 +72,7 @@ public class ServicoController {
         return null;
 
     }
+    @CrossOrigin(origins = "*",allowedHeaders = "*")
     @GetMapping("servicoRealizadoById")
     public ServicoRealizado getServicoRealizadoById(@RequestBody ServicoRealizadoIdDTO data){
         if(servicoRealizadoRp.existsById(data.id())){

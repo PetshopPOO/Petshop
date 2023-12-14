@@ -20,11 +20,13 @@ public class ClienteController {
     @Autowired
     private ClienteRp clienteRp;
 
+    @CrossOrigin(origins = "*",allowedHeaders = "*")
     @GetMapping
     public Iterable<Cliente> getAll(){
         return clienteRp.findAll();
     }
 
+    @CrossOrigin(origins = "*",allowedHeaders = "*")
     @PostMapping
     public boolean addCliente(@RequestBody ClienteRequestDTO data){
         if(!clienteRp.existsById(data.cpf())){
@@ -35,6 +37,7 @@ public class ClienteController {
         return false;
     }
 
+    @CrossOrigin(origins = "*",allowedHeaders = "*")
     @GetMapping("cpf")
     public Cliente getClienteByCpf(@RequestBody ClienteCpfDTO data){
         if(clienteRp.existsById(data.cpf())){
@@ -46,6 +49,7 @@ public class ClienteController {
 
     }
 
+    @CrossOrigin(origins = "*",allowedHeaders = "*")
     @PostMapping("atualizaCliente")
     public boolean atualizaCliente(@RequestBody ClienteRequestDTO data){
         if(clienteRp.existsById(data.cpf())){
@@ -62,6 +66,7 @@ public class ClienteController {
         return false;
     }
 
+    @CrossOrigin(origins = "*",allowedHeaders = "*")
     @DeleteMapping("deletaCliente")
     public boolean deleteCliente(@RequestBody ClienteCpfDTO data){
         if(clienteRp.existsById(data.cpf())){

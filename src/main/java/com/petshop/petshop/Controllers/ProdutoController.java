@@ -22,6 +22,7 @@ public class ProdutoController {
     @Autowired
     FornecedorRp fornecedorRp;
 
+    @CrossOrigin(origins = "*",allowedHeaders = "*")
     @GetMapping
     public Iterable<Produto> getAll(){
         Iterable<Produto> produtos = produtoRp.findAll();
@@ -29,6 +30,7 @@ public class ProdutoController {
         return produtos;
     }
 
+    @CrossOrigin(origins = "*",allowedHeaders = "*")
     @GetMapping("codigo")
     public Produto getByCodigo(@RequestBody ProdutoCodigoDTO data){
         if(produtoRp.existsById(data.codigo())){
@@ -38,6 +40,7 @@ public class ProdutoController {
 
 
     }
+    @CrossOrigin(origins = "*",allowedHeaders = "*")
     @PostMapping
     public void addProduto(@RequestBody ProdutoRequestDTO data){
         Fornecedor fornecedor = fornecedorRp.findByCnpj(data.fornecedor());
@@ -46,6 +49,7 @@ public class ProdutoController {
         produtoRp.save(produtoData);
     }
 
+    @CrossOrigin(origins = "*",allowedHeaders = "*")
     @PostMapping("compra")
     public boolean compraProduto(@RequestBody CompraProdutoDTO data){
         if(produtoRp.existsById(data.codigo())){
@@ -57,6 +61,7 @@ public class ProdutoController {
         return false;
     }
 
+    @CrossOrigin(origins = "*",allowedHeaders = "*")
     @DeleteMapping("deletaProduto")
     public boolean deletaProduto(ProdutoCodigoDTO data){
         if(produtoRp.existsById(data.codigo())){
@@ -67,6 +72,7 @@ public class ProdutoController {
         return false;
     }
 
+    @CrossOrigin(origins = "*",allowedHeaders = "*")
     @DeleteMapping("zeraProduto")
     public boolean zeraProduto(ProdutoCodigoDTO data){
         if(produtoRp.existsById(data.codigo())){

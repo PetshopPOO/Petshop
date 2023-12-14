@@ -30,6 +30,7 @@ public class VendaController {
     VendaRp vendaRp;
     @Autowired
     VendaTotalRp vendaTotalRp;
+    @CrossOrigin(origins = "*",allowedHeaders = "*")
     @PostMapping("itemVenda")
     public void itemVenda(@RequestBody VendaRequestDTO data){
         if(!vendaTotalRp.existsById(data.codigoVenda().getCodigo())) {
@@ -48,7 +49,8 @@ public class VendaController {
         vendaRp.save(itemVenda);
         }
 
-        @PostMapping("finalizaVenda")
+    @CrossOrigin(origins = "*",allowedHeaders = "*")
+    @PostMapping("finalizaVenda")
     public void finalizaVenda(@RequestBody VendaTotalRequestDTO data){
             System.out.println(data.codigoVenda());
         if(!vendaTotalRp.existsById(data.codigoVenda())) {
@@ -82,6 +84,7 @@ public class VendaController {
         vendaTotalRp.save(vendaTotal);
     }
 
+    @CrossOrigin(origins = "*",allowedHeaders = "*")
     @GetMapping("itemVendaByCodigo")
     public List<Venda> getItesVendaTotalByCodigo(@RequestBody ItensVendaTotalDTO data){
         if(vendaTotalRp.existsById(data.codigoVenda())){

@@ -15,11 +15,13 @@ public class FornecedorController {
     @Autowired
     private FornecedorRp fornecedorRp;
 
+    @CrossOrigin(origins = "*",allowedHeaders = "*")
     @GetMapping
     public Iterable<Fornecedor> getAll() {
         return fornecedorRp.findAll();
     }
 
+    @CrossOrigin(origins = "*",allowedHeaders = "*")
     @GetMapping("cnpj")
     public Fornecedor getFornecedorByCnpj(@RequestBody FornecedorCnpjDTO data){
         if(fornecedorRp.existsById(data.cnpj())){
@@ -30,6 +32,7 @@ public class FornecedorController {
 
     }
 
+    @CrossOrigin(origins = "*",allowedHeaders = "*")
     @PostMapping
     public boolean addFornecedor(@RequestBody FornecedorRequestDTO data) {
         if(!fornecedorRp.existsById(data.cnpj())){

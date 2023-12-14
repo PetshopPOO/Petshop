@@ -3,6 +3,7 @@ package com.petshop.petshop.models;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.petshop.petshop.secondary.FormaPagamento;
 
 import jakarta.persistence.*;
@@ -22,6 +23,7 @@ public class Venda {
     private Produto produto;
     private int quantidade;
     @ManyToOne
+    @JsonBackReference(value="venda-codi")
     private VendaTotal codigoVenda;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

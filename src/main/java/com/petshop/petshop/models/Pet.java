@@ -26,7 +26,7 @@ import java.io.Serializable;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class Pet implements Serializable {
+public class Pet {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long codigo; 
@@ -35,7 +35,7 @@ public class Pet implements Serializable {
     private String sexo;
     @ManyToOne
     @JoinColumn(name = "tutor")
-    @JsonBackReference
+    @JsonBackReference(value="pet-cliente-back")
     private Cliente tutor;
 
 

@@ -22,30 +22,54 @@ public class ClienteController {
 
     @GetMapping
     public Iterable<Cliente> getAll(){
-
-        try
-        {
-            System.out.println(clienteRp.findAll());
-        return clienteRp.findAll();}
-        catch(Exception e){
-            System.out.println("Fodeu");
-            return null;
-        }
-
+        return clienteRp.findAll();
     }
 
     @PostMapping
-    public void addCliente(@RequestBody ClienteRequestDTO data){
-        Cliente clienteData = new Cliente(data);
-        clienteRp.save(clienteData);
-        return;
+    public boolean addCliente(@RequestBody ClienteRequestDTO data){
+        if(!clienteRp.existsById(data.cpf())){
+            Cliente clienteData = new Cliente(data);
+            clienteRp.save(clienteData);
+            return true;
+        }
+        return false;
     }
 
     @GetMapping("cpf")
     public Cliente getClienteByCpf(@RequestBody ClienteCpfDTO data){
-        Cliente cliente = clienteRp.findByCpf(data.cpf());
-        System.out.println(cliente.getPets());
-        return cliente;
+        if(clienteRp.existsById(data.cpf())){
+            Cliente cliente = clienteRp.findByCpf(data.cpf());
+            System.out.println(cliente.getPets());
+            return cliente;
+        }
+        return null;
+
+    }
+
+    @PostMapping("atualizaCliente")
+    public boolean atualizaCliente(@RequestBody ClienteRequestDTO data){
+        if(clienteRp.existsById(data.cpf())){
+            Cliente clienteData = clienteRp.findById(data.cpf()).get();
+            clienteData.setEmail(data.email());
+            clienteData.setNome(data.nome());
+            clienteData.getEndereco().setRua(data.rua());
+            clienteData.getEndereco().setBairro(data.bairro());
+            clienteData.getEndereco().setCidade(data.cidade());
+            clienteData.setTelefones(data.telefones());
+            clienteRp.save(clienteData);
+            return true;
+        }
+        return false;
+    }
+
+    @DeleteMapping("deletaCliente")
+    public boolean deleteCliente(@RequestBody ClienteCpfDTO data){
+        if(clienteRp.existsById(data.cpf())){
+            Cliente cliente = clienteRp.findById(data.cpf()).get();
+            clienteRp.delete(cliente);
+            return true;
+        }
+        return false;
     }
 
 

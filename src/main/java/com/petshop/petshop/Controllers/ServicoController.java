@@ -42,8 +42,7 @@ public class ServicoController {
     }
     @PostMapping("realizaServico")
     public void realizaServico(@RequestBody ServicoRealizaDTO data){
-        Optional<Servico> servicoOp = servicoRp.findById(data.servico());
-        Servico servico = servicoOp.get();
+        Servico servico = servicoRp.findById(data.servico()).get();
         Pet pet = petRp.findById(data.pet()).get();
         Funcionario funcionario = funcionarioRp.findById(data.funcionario()).get();
         ServicoRealizado servicoRealizado = new ServicoRealizado(servico, pet, funcionario);
@@ -56,18 +55,23 @@ public class ServicoController {
     }
 
     @GetMapping("servicosRealizados")
-    public Iterable<ServicoRealizado> getAllServicosRealizados(){
-        return servicoRealizadoRp.findAll();
+    public Iterable<ServicoRealizado> getAllServicosRealizados(){return servicoRealizadoRp.findAll();
     }
 
-    @GetMapping("servicobyid")
+    @GetMapping("servicoById")
     public Servico getServicoById(@RequestBody ServicoByIdDTO data){
-        System.out.println(data.id());
-        return servicoRp.findById(data.id()).get();
+        if(servicoRp.existsById(data.id())){
+            return servicoRp.findById(data.id()).get();
+        }
+        return null;
+
     }
     @GetMapping("servicoRealizadoById")
     public ServicoRealizado getServicoRealizadoById(@RequestBody ServicoRealizadoIdDTO data){
-        System.out.println(data.id());
-        return servicoRealizadoRp.findById(data.id()).get();
+        if(servicoRealizadoRp.existsById(data.id())){
+            return servicoRealizadoRp.findById(data.id()).get();
+        }
+        return null;
+
     }
 }

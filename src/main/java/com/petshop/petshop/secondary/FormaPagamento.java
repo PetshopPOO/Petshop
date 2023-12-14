@@ -20,6 +20,6 @@ public abstract class FormaPagamento {
     @Id
     private String tipo;
     @ManyToMany
-    @JsonBackReference
+    @JsonBackReference(value="pagamento-venda")
     private List<VendaTotal> vendas;
 }

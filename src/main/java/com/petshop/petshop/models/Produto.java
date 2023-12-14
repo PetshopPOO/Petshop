@@ -25,7 +25,7 @@ public class Produto {
     private double preco;
     private int estoque = 0;
     @ManyToOne
-    @JsonBackReference
+    @JsonBackReference(value="produto-fornecedor-back")
     private Fornecedor fornecedor;
 
 

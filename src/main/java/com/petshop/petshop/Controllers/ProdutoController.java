@@ -30,8 +30,12 @@ public class ProdutoController {
     }
 
     @GetMapping("codigo")
-    public Optional<Produto> getByCodigo(@RequestBody ProdutoCodigoDTO data){
-        return produtoRp.findById(data.codigo());
+    public Produto getByCodigo(@RequestBody ProdutoCodigoDTO data){
+        if(produtoRp.existsById(data.codigo())){
+            return produtoRp.findById(data.codigo()).get();
+        }
+        return null;
+
 
     }
     @PostMapping
@@ -43,10 +47,33 @@ public class ProdutoController {
     }
 
     @PostMapping("compra")
-    public void compraProduto(@RequestBody CompraProdutoDTO data){
-        Optional<Produto> produtoOp = produtoRp.findById(data.codigo());
-        Produto produto = new Produto(produtoOp.get().getCodigo(), produtoOp.get().getNome(),produtoOp.get().getPreco(), produtoOp.get().getEstoque(),produtoOp.get().getFornecedor());
-        produto.setEstoque(produto.getEstoque() + data.quantidade());
-        produtoRp.save(produto);
+    public boolean compraProduto(@RequestBody CompraProdutoDTO data){
+        if(produtoRp.existsById(data.codigo())){
+            Produto produto = produtoRp.findById(data.codigo()).get();
+            produto.setEstoque(produto.getEstoque() + data.quantidade());
+            produtoRp.save(produto);
+            return true;
+        }
+        return false;
+    }
+
+    @DeleteMapping("deletaProduto")
+    public boolean deletaProduto(ProdutoCodigoDTO data){
+        if(produtoRp.existsById(data.codigo())){
+            Produto produto = produtoRp.findById(data.codigo()).get();
+            produtoRp.delete(produto);
+            return true;
+        }
+        return false;
+    }
+
+    @DeleteMapping("zeraProduto")
+    public boolean zeraProduto(ProdutoCodigoDTO data){
+        if(produtoRp.existsById(data.codigo())){
+            Produto produto = produtoRp.findById(data.codigo()).get();
+            produtoRp.save(produto);
+            return true;
+        }
+        return false;
     }
 }

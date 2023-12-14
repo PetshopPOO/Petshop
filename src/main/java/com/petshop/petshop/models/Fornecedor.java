@@ -25,7 +25,7 @@ public class Fornecedor {
     private String[] telefones;
     private Endereco endereco;
     @OneToMany(mappedBy = "fornecedor")
-    @JsonManagedReference
+    //@JsonManagedReference(value="fornecedor-produto-managed")
     private List<Produto> produtos;
 
     public Fornecedor(FornecedorRequestDTO data){

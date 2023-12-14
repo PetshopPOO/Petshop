@@ -1,5 +1,6 @@
 package com.petshop.petshop.Controllers;
 
+import com.petshop.petshop.DTO.FornecedorCnpjDTO;
 import com.petshop.petshop.DTO.FornecedorRequestDTO;
 import com.petshop.petshop.models.Cliente;
 import com.petshop.petshop.models.Fornecedor;
@@ -20,14 +21,23 @@ public class FornecedorController {
     }
 
     @GetMapping("cnpj")
-    public Fornecedor getFornecedorByCnpj(@RequestBody String cnpj){
-        Fornecedor fornecedor = fornecedorRp.findByCnpj(cnpj);
-        return fornecedor;
+    public Fornecedor getFornecedorByCnpj(@RequestBody FornecedorCnpjDTO data){
+        if(fornecedorRp.existsById(data.cnpj())){
+            Fornecedor fornecedor = fornecedorRp.findById(data.cnpj()).get();
+            return fornecedor;
+        }
+        return null;
+
     }
 
     @PostMapping
-    public void addFornecedor(@RequestBody FornecedorRequestDTO data) {
-        Fornecedor fornecedorData = new Fornecedor(data);
-        fornecedorRp.save(fornecedorData);
+    public boolean addFornecedor(@RequestBody FornecedorRequestDTO data) {
+        if(!fornecedorRp.existsById(data.cnpj())){
+            Fornecedor fornecedorData = new Fornecedor(data);
+            fornecedorRp.save(fornecedorData);
+            return true;
+        }
+        return false;
+
     }
 }

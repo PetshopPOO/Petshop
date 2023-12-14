@@ -25,7 +25,7 @@ public class ServicoRealizado implements Serializable {
     @ManyToOne
     private Pet pet;
     @ManyToOne
-    @JsonManagedReference
+    //@JsonManagedReference(value="servicorealizado-func-managed")
     private Funcionario funcionario;
 
     public ServicoRealizado(Servico servico, Pet pet, Funcionario funcionario) {

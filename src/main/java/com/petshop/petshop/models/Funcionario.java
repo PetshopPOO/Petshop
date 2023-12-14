@@ -28,10 +28,10 @@ public class Funcionario extends Pessoa implements Serializable {
     @ManyToOne
     private Funcionario supervisor;
     @OneToMany(mappedBy = "funcionario")
-    @JsonBackReference
+    @JsonBackReference(value="funcionario-servicorealizado-back")
     private List<ServicoRealizado> servicosRealizados;
     @OneToMany(mappedBy = "funcionario")
-    @JsonBackReference
+    @JsonBackReference(value="funcionario-vendatotal-back")
     private List<VendaTotal> vendas;
 
     public Funcionario(String cpf, String nome, String[] telefones, Endereco endereco, Long matricula, String rg,

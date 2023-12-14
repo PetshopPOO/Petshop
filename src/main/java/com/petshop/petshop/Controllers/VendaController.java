@@ -1,15 +1,13 @@
 package com.petshop.petshop.Controllers;
 
+import com.petshop.petshop.DTO.ItensVendaTotalDTO;
 import com.petshop.petshop.DTO.VendaRequestDTO;
 import com.petshop.petshop.DTO.VendaTotalRequestDTO;
 import com.petshop.petshop.models.*;
 import com.petshop.petshop.repositories.*;
 import com.petshop.petshop.secondary.FormaPagamento;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -36,7 +34,6 @@ public class VendaController {
     public void itemVenda(@RequestBody VendaRequestDTO data){
         if(!vendaTotalRp.existsById(data.codigoVenda().getCodigo())) {
             System.out.println(vendaTotalRp.save(new VendaTotal(data.codigoVenda().getCodigo())));
-
         }
         Optional<VendaTotal> vendaTotalOp = vendaTotalRp.findById(data.codigoVenda().getCodigo());
         VendaTotal vendaTotal = new VendaTotal(vendaTotalOp.get().getCodigo());
@@ -83,6 +80,14 @@ public class VendaController {
         vendaTotal.setCliente(cliente);
         vendaTotal.setFuncionario(funcionario);
         vendaTotalRp.save(vendaTotal);
+    }
+
+    @GetMapping("itemVendaByCodigo")
+    public List<Venda> getItesVendaTotalByCodigo(@RequestBody ItensVendaTotalDTO data){
+        if(vendaTotalRp.existsById(data.codigoVenda())){
+            return vendaTotalRp.findById(data.codigoVenda()).get().getItensVenda();
+        }
+        return null;
     }
 
 

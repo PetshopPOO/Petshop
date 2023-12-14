@@ -1,6 +1,7 @@
 package com.petshop.petshop.Controllers;
 
 import com.petshop.petshop.DTO.ClienteCpfDTO;
+import com.petshop.petshop.DTO.PetIdDTO;
 import com.petshop.petshop.DTO.PetRequestDTO;
 import com.petshop.petshop.models.Cliente;
 import com.petshop.petshop.models.Pet;
@@ -37,5 +38,15 @@ public class PetController {
         Pet pet = new Pet(data);
         pet.setTutor(clienteRp.findByCpf(data.tutor()));
         petRp.save(pet);
+    }
+
+    @DeleteMapping("deletaPet")
+    public boolean deletaPet(PetIdDTO data){
+        if(petRp.existsById(data.id())){
+            Pet pet = petRp.findById(data.id()).get();
+            petRp.delete(pet);
+            return true;
+        }
+        return false;
     }
 }

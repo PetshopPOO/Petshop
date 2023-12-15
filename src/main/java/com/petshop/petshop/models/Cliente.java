@@ -3,6 +3,9 @@ package com.petshop.petshop.models;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
+
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.petshop.petshop.DTO.ClienteRequestDTO;
@@ -26,10 +29,10 @@ import lombok.ToString;
 public class Cliente extends Pessoa{
     private String email;
     @OneToMany(mappedBy = "tutor", fetch = FetchType.EAGER)
-    //@JsonManagedReference(value="Cliente-pet-managed")
+    @JsonBackReference(value="pet-cliente-back")
     private List<Pet> pets;
     @OneToMany(mappedBy = "cliente")
-    //@JsonManagedReference(value="Cliente-vendatotal-managed")
+    @JsonBackReference(value="vendatotal-cliente-back")
     private List<VendaTotal> compras;
 
     

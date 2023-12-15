@@ -7,6 +7,9 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
 import org.springframework.data.repository.CrudRepository;
 
 import java.io.Serializable;
@@ -16,6 +19,7 @@ import java.util.List;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+
 public class ServicoRealizado implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

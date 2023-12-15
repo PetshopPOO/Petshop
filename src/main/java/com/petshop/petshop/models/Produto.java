@@ -9,6 +9,9 @@ import lombok.*;
 
 import java.util.List;
 
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
+
 @Entity
 @Table(name = "Produto")
 @Getter

@@ -1,9 +1,12 @@
 package com.petshop.petshop.Controllers;
 
+import com.petshop.petshop.DTO.ClienteCpfDTO;
+import com.petshop.petshop.DTO.ProdutoCodigoDTO;
 import com.petshop.petshop.DTO.ServicoByIdDTO;
 import com.petshop.petshop.DTO.ServicoRealizaDTO;
 import com.petshop.petshop.DTO.ServicoRealizadoIdDTO;
 import com.petshop.petshop.DTO.ServicoRequestDTO;
+import com.petshop.petshop.models.Cliente;
 import com.petshop.petshop.models.Funcionario;
 import com.petshop.petshop.models.Pet;
 import com.petshop.petshop.models.Servico;
@@ -80,5 +83,15 @@ public class ServicoController {
         }
         return null;
 
+    }
+    @CrossOrigin(origins = "*",allowedHeaders = "*")
+    @DeleteMapping("deletaServico")
+    public boolean deleteServico(@RequestBody ServicoByIdDTO data){
+        if(servicoRp.existsById(data.id())){
+            Servico servico = servicoRp.findById(data.id()).get();
+            servicoRp.delete(servico);
+            return true;
+        }
+        return false;
     }
 }

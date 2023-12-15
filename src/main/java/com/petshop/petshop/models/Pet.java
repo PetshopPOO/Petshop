@@ -16,6 +16,9 @@ import jakarta.persistence.Table;
 
 
 import lombok.*;
+
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.io.Serializable;
@@ -26,6 +29,7 @@ import java.io.Serializable;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
+
 public class Pet {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -35,7 +39,7 @@ public class Pet {
     private String sexo;
     @ManyToOne
     @JoinColumn(name = "tutor")
-    @JsonBackReference(value="pet-cliente-back")
+    @JsonManagedReference(value="Cliente-pet-managed")
     private Cliente tutor;
 
 
@@ -44,7 +48,6 @@ public class Pet {
         this.nome = data.nome();
         this.especie = data.especie();
         this.sexo = data.sexo();
-
     }
     
 }

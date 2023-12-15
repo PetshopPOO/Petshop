@@ -50,6 +50,11 @@ public class VendaController {
         }
 
     @CrossOrigin(origins = "*",allowedHeaders = "*")
+    @GetMapping
+    public Iterable<VendaTotal> getAllVendaTotal(){
+        return vendaTotalRp.findAll();
+    }
+    @CrossOrigin(origins = "*",allowedHeaders = "*")
     @PostMapping("finalizaVenda")
     public void finalizaVenda(@RequestBody VendaTotalRequestDTO data){
             System.out.println(data.codigoVenda());
@@ -92,6 +97,7 @@ public class VendaController {
         }
         return null;
     }
+    
 
 
 }

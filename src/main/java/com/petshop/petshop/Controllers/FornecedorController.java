@@ -1,5 +1,6 @@
 package com.petshop.petshop.Controllers;
 
+import com.petshop.petshop.DTO.ClienteCpfDTO;
 import com.petshop.petshop.DTO.FornecedorCnpjDTO;
 import com.petshop.petshop.DTO.FornecedorRequestDTO;
 import com.petshop.petshop.models.Cliente;
@@ -42,5 +43,15 @@ public class FornecedorController {
         }
         return false;
 
+    }
+    @CrossOrigin(origins = "*",allowedHeaders = "*")
+    @DeleteMapping("deletaFornecedor")
+    public boolean deleteFornecedor(@RequestBody FornecedorCnpjDTO data){
+        if(fornecedorRp.existsById(data.cnpj())){
+            Fornecedor fornecedor = fornecedorRp.findById(data.cnpj()).get();
+            fornecedorRp.delete(fornecedor);
+            return true;
+        }
+        return false;
     }
 }

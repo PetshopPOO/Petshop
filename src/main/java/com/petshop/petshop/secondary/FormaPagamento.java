@@ -11,11 +11,15 @@ import lombok.Setter;
 
 import java.util.List;
 
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
+
 @Entity
 @Getter
 @Setter
 @NoArgsConstructor
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+
 public abstract class FormaPagamento {
     @Id
     private String tipo;

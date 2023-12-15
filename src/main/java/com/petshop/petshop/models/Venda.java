@@ -3,6 +3,9 @@ package com.petshop.petshop.models;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
+
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.petshop.petshop.secondary.FormaPagamento;
 
@@ -16,6 +19,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
+
 public class Venda {
 
     private double valor;

@@ -10,12 +10,16 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
+
 @Entity
 @Getter
 @Setter
 @ToString
 @NoArgsConstructor
 @AllArgsConstructor
+
 public class VendaTotal implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -27,10 +31,11 @@ public class VendaTotal implements Serializable {
     //@JsonManagedReference(value="vendatotal-pag-managed")
     private List<FormaPagamento> formasPagamento;
     @ManyToOne
-    @JsonBackReference(value="vendatotal-cliente-back")
+    
+    @JsonManagedReference(value="Cliente-vendatotal-managed")
     private Cliente cliente;
     @ManyToOne
-    @JsonBackReference(value="vendatotal-func-back")
+    @JsonManagedReference(value="vendatotal-func-managed")
     private Funcionario funcionario;
 
     public VendaTotal(Long codigo) {

@@ -9,6 +9,9 @@ import lombok.ToString;
 
 import java.io.Serializable;
 
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
+
 @Entity
 @Getter
 @Setter
@@ -16,6 +19,7 @@ import java.io.Serializable;
 @NoArgsConstructor
 @ToString
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
+
 public abstract class Pessoa implements Serializable {
     @Id
     private String cpf;

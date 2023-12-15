@@ -50,7 +50,7 @@ public class ClienteController {
     }
 
     @CrossOrigin(origins = "*",allowedHeaders = "*")
-    @PostMapping("atualizaCliente")
+    @PatchMapping("atualizaCliente")
     public boolean atualizaCliente(@RequestBody ClienteRequestDTO data){
         if(clienteRp.existsById(data.cpf())){
             Cliente clienteData = clienteRp.findById(data.cpf()).get();

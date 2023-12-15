@@ -12,12 +12,16 @@ import lombok.*;
 
 import java.util.List;
 
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
+
 @Entity
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
 //@ToString
+
 public class Fornecedor {
     @Id
     private String cnpj;

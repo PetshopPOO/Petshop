@@ -1,0 +1,13 @@
+.nav{
+    background-color: rgb(72, 197, 197);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.opcao{
+    display: block;
+}
+.btn-primary{
+    color: black;
+    background-color: aquamarine;
+}

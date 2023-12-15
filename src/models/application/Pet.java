@@ -5,11 +5,13 @@ public class Pet {
     private String nome;
     private String especie;
     private char sexo;
+    private Cliente tutor;
     
-    public Pet(String nome, String especie, char sexo) {
+    public Pet(String nome, String especie, char sexo, Cliente tutor) {
         this.nome = nome;
         this.especie = especie;
         this.sexo = sexo;
+        this.tutor = tutor;
         codigo++;
     }
 
@@ -39,6 +41,14 @@ public class Pet {
 
     public void setSexo(char sexo) {
         this.sexo = sexo;
+    }
+
+    public Cliente getTutor() {
+        return tutor;
+    }
+
+    public void setTutor(Cliente tutor) {
+        this.tutor = tutor;
     }
 
     

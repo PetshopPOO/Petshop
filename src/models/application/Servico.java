@@ -4,10 +4,12 @@ public class Servico {
     private static int codigo = 0;
     private String tipo;
     private double valor;
-    
-    public Servico(String tipo, double valor) {
+    private Pet pet;
+
+    public Servico(String tipo, double valor, Pet pet) {
         this.tipo = tipo;
         this.valor = valor;
+        this.pet = pet; 
         codigo++;
     }
 
@@ -32,4 +34,7 @@ public class Servico {
     }
 
     
-}
+ }
+
+    
+
